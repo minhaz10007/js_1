@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bootstrap</title>
+	<!-- css links -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- text change -->
+		<h1>click the button to change the content</h1>
+		<button type="button" class="btn btn-dark" onclick="textChange()">click me</button>
+		<h2 id="h2">hello world!</h2>
+
+
+
+		<!-- on off -->
+		<h1>click the button to change bulb on off</h1>
+		<button type="button" class="btn btn-danger" onclick="bulbOn()">on</button>
+		<img src="img/bulb_off.gif" id="bulb" alt="bulb">
+		<button type="button" class="btn btn-dark" onclick="bulbOff()">off</button>
+
+
+
+		<!-- content change -->
+		<h1>click the button to content change</h1>
+		<button type="button" class="btn btn-danger" onclick="contentChangeQue()">Que</button>
+		<button type="button" class="btn btn-dark" onclick="contentChange()">Ans</button>
+		<p id="pc">hi! i am minhazul islam</p>
+
+
+
+		<!-- color change -->
+		<h1>click the button to the text color</h1>
+		<button type="button" class="btn btn-dark" onclick="colorChange()">color</button>
+		<h2 id="clr">how are you?</h2>
+
+
+		<!-- dubble click -->
+		<h1>click the button 2 times to change the text color</h1>
+		<button type="button" class="btn btn-dark" ondblclick="dubbleClick()">dubble click</button>
+		<h2 id="ddbl"></h2>
+
+
+		<!-- img over -->
+		<h1>onmouse over</h1>
+		<img src="img/hover.gif" alt="hover" onmouseover="imgBig(this)" onmouseout="imgNormal(this)">
+
+
+		<!-- text color multiple -->
+		<h1>click the button to change the text color</h1>
+		<h2 onmouseover="multiColorBlue(this)" onmouseup="multiColorRed(this)" onmouseout="multiColorBlack(this)">Hello Bangladesh</h2>
+
+
+
+
+
+	</div>
+
+
+
+	<!-- js links -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
